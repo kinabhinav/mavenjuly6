@@ -18,5 +18,20 @@ public class LoginTest {
 	driver = new ChromeDriver();
 		
 	driver.get("https://blackpearl.kinductdev.com/login");
+	
+driver.manage().window().maximize(); 
+	
+	driver.findElement(By.xpath(".//*[@id='username']")).clear();
+	driver.findElement(By.xpath(".//*[@id='username']")).sendKeys("admin");
+	
+	driver.findElement(By.xpath(".//*[@id='password']")).clear();
+	driver.findElement(By.xpath(".//*[@id='password']")).sendKeys("L3@d3r!");
+	
+	JavascriptExecutor js1 = (JavascriptExecutor) driver;
+    
+	js1.executeScript("javascript:window.scrollBy(250,350)");
+	
+	driver.findElement(By.xpath(".//*[@id='login_form']/button")).click();
+
 	}
 }
