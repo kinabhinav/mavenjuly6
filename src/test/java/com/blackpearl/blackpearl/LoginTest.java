@@ -17,7 +17,7 @@ public class LoginTest {
 		//System.setProperty("webdriver.chrome.driver", "/usr/local/share/chromedriver");
 	driver = new ChromeDriver();
 		
-	driver.get("https://blackpearl.kinductdev.com/login");
+	driver.get("https://blackpearl-uat.kinductdev.com/login");
 	
 driver.manage().window().maximize(); 
 	
@@ -39,7 +39,7 @@ driver.findElement(By.xpath(".//*[@id='org_chart']/ul/li/ul/li[19]/a")).click();
 	
 	 
 	{
-	driver.get("https://blackpearl.kinductdev.com/form/edit/new");
+	driver.get("https://blackpearl-uat.kinductdev.com/form/edit/new");
 	}
 
 	}
